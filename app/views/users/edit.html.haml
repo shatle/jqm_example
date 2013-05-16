@@ -1,0 +1,7 @@
+%ul{"data-divider-theme" => "c", "data-inset" => "true", "data-role" => "listview"}
+  %li{"data-role" => "list-divider", :role => "heading"}
+    基本资料
+
+= render 'form'
+
+%a{"data-icon" => "back", "data-iconpos" => "left", "data-role" => "button", :href => "/users/#{@user.id}"} 返回查看

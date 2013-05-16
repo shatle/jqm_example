@@ -1,0 +1,21 @@
+= form_for @user do |f|
+  .box-white
+    .field.item
+      = f.label "姓名"
+      = f.text_field :name
+    .field.item
+      = f.label "省份"
+      = f.text_field :province
+
+  .box-white
+    .field.item
+      = f.label "学校"
+      = f.text_field :school
+    .field.item
+      = f.label "分数"
+      = f.number_field :score
+    .field.item
+      = f.label "专业"
+      = f.text_field :specialty
+  .actions
+    = f.submit '保存', "data-theme"=>"b", "data-icon" => "check"

@@ -1,0 +1,7 @@
+%ul{"data-filter" => "true", "data-inset" => "true", "data-role" => "listview"}
+  - @users.each do |user|
+    %li(data-theme="c")
+      %a(href="/users/#{user.id}")
+        = user.name
+%form
+  %input#slider-0{:max => "100", :min => "0", :name => "slider", :type => "range", :value => "25"}

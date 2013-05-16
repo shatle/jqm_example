@@ -1,0 +1,102 @@
+// override jqm css
+// [data-role=header]{top:0; position:absolute !important; bottom: auto !important; width: 100%; }
+[data-role=content]{padding: 20px 10px 90px 10px;} 
+// [data-role=footer]{bottom:0;right:0;top:auto! important ;position:absolute !important; width: 100%;height: 70px; } 
+[data-role=footer] {
+position: fixed;
+z-index: 10;
+bottom: 0;
+width: 100%;
+}
+[data-role=footer] [data-role=navbar] ul li a {
+  height: 70px;
+}
+
+
+// *****************
+
+.muted {
+  color: #999;
+}
+
+.text-warning {
+  color: #c09853;
+}
+
+.text-error {
+  color: #b94a48;
+}
+
+.text-info {
+  color: #3a87ad;
+}
+
+.text-success {
+  color: #468847;
+}
+
+p {
+  padding: 10px;
+}
+
+.pdv20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+// expand box css
+
+.box-white {
+  background: #fff;
+  border: 1px solid #B4B7BB;
+  border-radius: 10px;
+  margin: 0px 0px 10px 0px;
+
+  > .item {
+    > strong, label {
+      @extend .muted;
+      
+      width: 30%;
+      max-width: 200px;
+    }
+
+    > span, .ui-input-text.ui-shadow-inset.ui-corner-all.ui-btn-shadow{
+      width: 60%;
+      float: right;
+    }
+
+    > span {
+      width: 70%;
+    }
+  }
+
+  > p, .field {
+    color: #000;
+    border-bottom: 1px solid #B4B7BB;
+    font-weight: bold;
+    margin: 0;
+    padding: 6px;
+  }
+
+  > p:last-child, .field:last-child {
+    border-bottom: none;
+  }
+
+  > .field {
+    min-height: 36px;
+  }
+
+  > .field.item {
+    min-height: 50px;
+
+    strong, label {
+      float: left;
+      margin: .5em 0;
+      padding: .5em;
+    }
+  }  
+
+  .ui-input-text.ui-shadow-inset.ui-corner-all.ui-btn-shadow {
+    min-height: 36px;
+  }
+}

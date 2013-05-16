@@ -1,0 +1,24 @@
+%a{"data-icon" => "edit", "data-theme"=>"b", "data-iconpos" => "left", "data-role" => "button", :href => "/users/#{@user.id}/edit", :style=>"margin-bottom: 20px;"}
+  基本信息
+
+.box-white
+  %p.item
+    %strong.muted 昵称
+    %span= @user.name
+
+  %p.item
+    %strong.muted 省份
+    %span= @user.province
+
+.box-white
+  %p.item
+    %strong.muted 选校
+    %span= @user.school
+
+  %p.item
+    %strong.muted 分数
+    %span= @user.score
+
+  %p.item
+    %strong.muted 专业
+    %span= @user.specialty
